@@ -9,7 +9,6 @@
     height: 50%;
     display: flex;
     justify-content: space-between;
-    color: #26292C;
 
     .name-container {
       height: fit-content;
@@ -26,6 +25,9 @@
         &:last-child {
           padding-left: 50px;
           font-style: italic;
+          font-size: 4.4em;
+          font-family: "PP Supply Sans", sans-serif;
+          color: #8884FF;
         }
       }
     }
@@ -36,7 +38,7 @@
       overflow-y: hidden;
 
       span {
-        display: block;
+        display: inline-block;
         font-family: "Neue Montreal", sans-serif;
         font-size: 2.5em;
         transform: translateY(100%);
@@ -50,7 +52,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    color: #26292C;
+    color: #393D41;
 
     .portfolio-information-container {
       height: fit-content;
@@ -65,8 +67,16 @@
 
         &:last-child {
           margin-top: 5px;
+          color: #8884FF;
         }
       }
+    }
+
+    .line {
+      height: 1px;
+      flex: 0;
+      margin: 0 50px;
+      background-color: #393D41;
     }
 
     .job-container {
@@ -85,6 +95,8 @@
         &:last-child {
           padding-left: 45px;
           font-style: normal;
+          color: #8884FF;
+
         }
       }
     }

@@ -22,7 +22,11 @@ const InformationOverlay = () => {
             y: '0',
             ease: 'power3.inOut',
             stagger: 0.1,
-        }, '<+=0.2');
+        }, '<+=0.2').to('.info', 1.3, {
+            y: '0',
+            ease: 'power3.inOut',
+            stagger: 0.2,
+        },'-=1.3');
     }, []);
 
     return (
@@ -33,7 +37,7 @@ const InformationOverlay = () => {
                     <span>CRENEGUY.</span>
                 </div>
                 <div className="time-container">
-                    <span><Clock/></span>
+                    <Clock/>
                 </div>
             </div>
             <div className="down-infos">
@@ -45,6 +49,7 @@ const InformationOverlay = () => {
                     created by sechs
                 </span>
                 </div>
+                <div className="line"></div>
                 <div className="job-container">
                     <span>
                         FASHION

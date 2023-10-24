@@ -13,19 +13,47 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #1C1F21;
 
-    span {
-      display: block;
-      font-family: "Philifont", sans-serif;
-      font-size: 2em;
-      text-align: justify;
-      line-height: 40px;
 
-      &:first-child {
-        font-size: 3em;
-        padding-bottom: 20px;
+    div {
+      position: relative;
+      height: fit-content;
+      overflow-y: hidden;
+
+      &:nth-of-type(1) {
+        padding-bottom: 30px;
+      }
+
+      .greetings {
+        display: block;
+        font-size: 6.5em;
+        font-style: italic;
+        font-weight: 600;
+        padding: 0 20px;
+        transform: translateY(140%);
       }
     }
 
+    div {
+      position: relative;
+      height: fit-content;
+      overflow-y: hidden;
+      padding-bottom: 15px;
+
+      .info-text {
+        display: block;
+        font-family: "Neue Montreal", sans-serif;
+        font-size: 1.8em;
+        text-align: center;
+        line-height: 40px;
+        transform: translateY(120%);
+
+        .name, .job, .brand {
+          font-weight: 700;
+          font-size: 1em;
+        }
+      }
+    }
   }
 }
