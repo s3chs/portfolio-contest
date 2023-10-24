@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Layout } from './components/Layout/Layout';
+import InformationOverlay from './components/InformationOverlay/InformationOverlay';
+import LocomotiveScroll from 'locomotive-scroll';
+import About from './components/About/About';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const locomotiveScroll = new LocomotiveScroll({
+        lenisOptions: {
+            wrapper: window,
+            content: document.documentElement,
+            lerp: 0.1,
+            duration: 1.2,
+            orientation: 'horizontal',
+            gestureOrientation: 'vertical',
+            smoothWheel: true,
+            smoothTouch: false,
+            wheelMultiplier: 1,
+            touchMultiplier: 2,
+            normalizeWheel: true,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+        },
+    });
+
+    return (
+        <Layout>
+            <InformationOverlay/>
+            <About/>
+        </Layout>
+    );
 }
 
 export default App;

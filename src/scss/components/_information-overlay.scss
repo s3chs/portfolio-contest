@@ -1,0 +1,92 @@
+.information-overlay-container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  padding: 40px;
+
+  .upper-infos {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: #26292C;
+
+    .name-container {
+      height: fit-content;
+      position: relative;
+      overflow-y: hidden;
+
+      span {
+        display: block;
+        font-family: "Neue Montreal", sans-serif;
+        font-size: 4em;
+        font-weight: 500;
+        transform: translateY(300%);
+
+        &:last-child {
+          padding-left: 50px;
+          font-style: italic;
+        }
+      }
+    }
+
+    .time-container {
+      height: fit-content;
+      position: relative;
+      overflow-y: hidden;
+
+      span {
+        display: block;
+        font-family: "Neue Montreal", sans-serif;
+        font-size: 2.5em;
+        transform: translateY(100%);
+      }
+    }
+  }
+
+  .down-infos {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #26292C;
+
+    .portfolio-information-container {
+      height: fit-content;
+      position: relative;
+      overflow-y: hidden;
+
+      span {
+        display: block;
+        font-family: "Neue Montreal", sans-serif;
+        font-size: 1.1em;
+        transform: translateY(300%);
+
+        &:last-child {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .job-container {
+      height: fit-content;
+      position: relative;
+      overflow-y: hidden;
+
+      span {
+        display: block;
+        font-family: "Neue Montreal", sans-serif;
+        font-size: 3em;
+        font-weight: 500;
+        font-style: italic;
+        transform: translateY(300%);
+
+        &:last-child {
+          padding-left: 45px;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
