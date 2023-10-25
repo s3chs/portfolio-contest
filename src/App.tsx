@@ -2,6 +2,7 @@ import { Layout } from './components/Layout/Layout';
 import InformationOverlay from './components/InformationOverlay/InformationOverlay';
 import LocomotiveScroll from 'locomotive-scroll';
 import About from './components/About/About';
+import Projects from './components/Projects/Projects';
 
 function App() {
     const locomotiveScroll = new LocomotiveScroll({
@@ -25,6 +26,7 @@ function App() {
         <Layout>
             <InformationOverlay/>
             <About/>
+            <Projects/>
         </Layout>
     );
 }

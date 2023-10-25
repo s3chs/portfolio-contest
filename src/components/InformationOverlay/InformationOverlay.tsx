@@ -10,23 +10,25 @@ const InformationOverlay = () => {
         tl.to('.name-container > span', 1.7, {
             y: '0',
             ease: 'power3.inOut',
-            stagger: 0.1,
+            stagger: 0.06,
         }).to('.time-container > span', 1.2, {
             y: '0',
             ease: 'power3.inOut',
         }, '-=1.1').to('.portfolio-information-container > span', 1.5, {
             y: '0',
             ease: 'power3.inOut',
-            stagger: 0.1,
+            stagger: 0.06,
         }, '<').to('.job-container > span', 1.7, {
             y: '0',
             ease: 'power3.inOut',
-            stagger: 0.1,
+            stagger: 0.06,
         }, '<+=0.2').to('.info', 1.3, {
             y: '0',
             ease: 'power3.inOut',
-            stagger: 0.2,
-        },'-=1.3');
+            stagger: 0.1,
+        }, '-=1.3').to('.overlay-name, .overlay-info, .overlay-job, .overlay-minutes, .overlay-line', 0, {
+            transition: '0.7s all cubic-bezier(0.77, 0, 0.175, 1)',
+        });
     }, []);
 
     return (
@@ -34,7 +36,7 @@ const InformationOverlay = () => {
             <div className="upper-infos">
                 <div className="name-container">
                     <span>MARGOT</span>
-                    <span>CRENEGUY.</span>
+                    <span className="overlay-name">CRENEGUY.</span>
                 </div>
                 <div className="time-container">
                     <Clock/>
@@ -45,16 +47,16 @@ const InformationOverlay = () => {
                 <span>
                     Portfolio 2023
                 </span>
-                    <span>
+                    <span className="overlay-info">
                     created by sechs
                 </span>
                 </div>
-                <div className="line"></div>
+                <div className="overlay-line"></div>
                 <div className="job-container">
                     <span>
                         FASHION
                     </span>
-                    <span>
+                    <span className="overlay-job">
                         STYLIST
                     </span>
                 </div>

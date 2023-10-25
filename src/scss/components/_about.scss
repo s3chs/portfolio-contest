@@ -27,11 +27,13 @@
 
       .greetings {
         display: block;
-        font-size: 6.5em;
+        font-size: 8.5em;
         font-style: italic;
         font-weight: 600;
         padding: 0 20px;
         transform: translateY(140%);
+        //font-family: "PP Supply Sans";
+        color: #8884FF;
       }
     }
 
@@ -52,6 +54,7 @@
         .name, .job, .brand {
           font-weight: 700;
           font-size: 1em;
+          color: #8884FF;
         }
       }
     }

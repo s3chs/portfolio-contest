@@ -1,5 +1,15 @@
 .layout-container {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: auto;
+  display: flex;
+  transition: 0.7s all cubic-bezier(0.77, 0, 0.175, 1);
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  //&:has(.projects-container:hover) {
+  //  background-color: lightpink;
+  //}
 }

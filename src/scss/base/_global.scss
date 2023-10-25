@@ -3,10 +3,16 @@ html {
     font-family: "Philifont", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #F5F5F5;
+    //background-color: #EBEBEB;
+    background-color: #E8FCCF;
+    transition: 0.7s background-color cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
 
-.minutes {
+.overlay-minutes {
   color: #8884FF;
 }

@@ -21,7 +21,7 @@ const Clock = () => {
         return (
             <>
                 <span>{hours}:</span>
-                <span className='minutes'>{minutes}</span>
+                <span className='overlay-minutes'>{minutes}</span>
             </>
         );
     }
