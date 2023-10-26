@@ -7,7 +7,7 @@ const InformationOverlay = () => {
     useEffect(() => {
         const tl = gsap.timeline();
 
-        tl.to('.name-container > span', 1.7, {
+        tl.to('.portfolio-name-container > span', 1.7, {
             y: '0',
             ease: 'power3.inOut',
             stagger: 0.06,
@@ -37,7 +37,7 @@ const InformationOverlay = () => {
     return (
         <div className="information-overlay-container">
             <div className="upper-infos">
-                <div className="name-container">
+                <div className="portfolio-name-container">
                     <span>MARGOT</span>
                     <span className="overlay-name">CRENEGUY.</span>
                 </div>

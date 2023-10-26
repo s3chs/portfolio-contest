@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 75vh;
+    height: 80vh;
     width: 30vw;
     overflow: hidden;
     transition: 0.7s clip-path cubic-bezier(0.77, 0, 0.175, 1);
@@ -39,169 +39,122 @@
   }
 
   .brand-container {
-    &.billabong {
-      grid-area: 6 / 2 / 8 / 5;
-      z-index: 15;
+    font-family: "PP Supply Sans", sans-serif;
+    font-size: 7em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 15;
+    overflow: hidden;
 
-      span {
-        font-family: "PP Supply Sans", sans-serif;
-        font-size: 7em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #83BCFF;
+    span {
+      display: block;
+      transition: 1.3s transform cubic-bezier(0.77, 0, 0.175, 1);
+      transform: translateY(200px);
+
+      &.active {
+        transform: translateY(0px);
       }
+    }
+
+    &.billabong {
+      grid-area: 6 / 2 / 8 / 12;
+      color: #83BCFF;
     }
 
     &.deus {
-      grid-area: 8 / 3 / 10 / 8;
-      z-index: 15;
-
-      span {
-        font-family: "PP Supply Sans", sans-serif;
-        font-size: 7em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #2E2E3A;
-      }
+      grid-area: 8 / 3 / 10 / 12;
+      color: #2E2E3A;
     }
 
     &.daily-paper {
-      grid-area: 3 / 3 / 6 / 8;
-      z-index: 15;
-
-      span {
-        font-family: "PP Supply Sans", sans-serif;
-        font-size: 7em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #2F3061;
-      }
+      grid-area: 3 / 3 / 5 / 12;
+      color: #2F3061;
     }
 
     &.noah {
-      grid-area: 6 / 4 / 9 / 8;
-      z-index: 15;
-
-      span {
-        font-family: "PP Supply Sans", sans-serif;
-        font-size: 7em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #220C10;
-      }
+      grid-area: 6 / 4 / 8 / 12;
+      color: #220C10;
     }
   }
 
   .name-container {
-    &.billabong {
-      grid-area: 2 / 8 / 4 / 12;
-      z-index: 15;
+    font-family: "Neue Montreal", sans-serif;
+    font-size: 4.5em;
+    font-weight: 500;
+    z-index: 15;
+    overflow: hidden;
 
-      span {
-        font-family: "Neue Montreal", sans-serif;
-        font-size: 4.5em;
-        font-weight: 500;
-        z-index: 25;
-        color: #83BCFF;
+    span {
+      display: block;
+      transition: 1.3s transform cubic-bezier(0.77, 0, 0.175, 1);
+      transition-delay: 0.3s;
+      transform: translateY(300px);
+
+      &.active {
+        transform: translateY(0px);
       }
+    }
+
+    &.billabong {
+      grid-area: 2 / 8 / 5 / 12;
+      color: #83BCFF;
     }
 
     &.deus {
       grid-area: 5 / 9 / 8 / 12;
-      z-index: 15;
-
-      span {
-        font-family: "Neue Montreal", sans-serif;
-        font-size: 4em;
-        font-weight: 500;
-        color: #2E2E3A;
-      }
+      color: #2E2E3A;
     }
 
     &.daily-paper {
-      grid-area: 7 / 9 / 9 / 12;
-      z-index: 15;
-
-      span {
-        font-family: "Neue Montreal", sans-serif;
-        font-size: 4em;
-        font-weight: 500;
-        color: #2F3061;
-      }
+      grid-area: 7 / 9 / 10 / 12;
+      color: #2F3061;
     }
 
     &.noah {
-      grid-area: 3 / 9 / 5 / 12;
-      z-index: 15;
-
-      span {
-        font-family: "Neue Montreal", sans-serif;
-        font-size: 4em;
-        font-weight: 500;
-        color: #220C10;
-      }
+      grid-area: 3 / 9 / 6 / 12;
+      color: #220C10;
     }
   }
 
   .collection-container {
+    font-family: "PP Supply Sans", sans-serif;
+    font-size: 3.5em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 15;
+    overflow-y: hidden;
+
+    span {
+      display: block;
+      transition: 1.3s transform cubic-bezier(0.77, 0, 0.175, 1);
+      transition-delay: 0.6s;
+      transform: translateY(200px);
+
+      &.active {
+        transform: translateY(0px);
+      }
+    }
+
     &.billabong {
       grid-area: 10 / 9 / 11 / 12;
-      z-index: 15;
-
-      span {
-        font-family: "PP Supply Sans", sans-serif;
-        font-size: 4em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #83BCFF;
-      }
+      color: #83BCFF;
     }
 
     &.deus {
       grid-area: 2 / 4 / 3 / 7;
-      z-index: 15;
-
-      span {
-        font-family: "PP Supply Sans", sans-serif;
-        font-size: 3.5em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #2E2E3A;
-      }
+      color: #2E2E3A;
     }
 
     &.daily-paper {
-      grid-area: 9 / 2 / 12 / 8;
-      z-index: 15;
-
-      span {
-        font-family: "PP Supply Sans", sans-serif;
-        font-size: 3.5em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #2F3061;
-      }
+      grid-area: 9 / 2 / 10 / 8;
+      color: #2F3061;
     }
 
     &.noah {
       grid-area: 11 / 8 / 12 / 12;
-      z-index: 15;
-
-      span {
-        font-family: "PP Supply Sans", sans-serif;
-        font-size: 3.5em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #220C10;
-      }
+      color: #220C10;
     }
   }
 }

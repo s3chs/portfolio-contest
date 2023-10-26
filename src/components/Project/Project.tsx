@@ -12,8 +12,7 @@ const Project = ({name, brand, pictures, collection, projectClass}: ProjectProps
              data-scroll-offset="40%, 40%" data-scroll-repeat
         >
             <div className={'project-picture-container'} data-scroll data-scroll-class="active"
-                 data-scroll-offset="40%, 40%"
-                 data-scroll-repeat>
+                 data-scroll-offset="40%, 40%" data-scroll-repeat>
                 <img
                     className={' project-picture'}
                     src={pictures[0]}
