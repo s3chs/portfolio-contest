@@ -18,11 +18,14 @@ const InformationOverlay = () => {
             y: '0',
             ease: 'power3.inOut',
             stagger: 0.06,
-        }, '<').to('.job-container > span', 1.7, {
+        }, '<').to('.overlay-line', 1, {
+            flex: 1,
+            ease: 'power3.inOut',
+        }, '<+=0.5').to('.job-container > span', 1.7, {
             y: '0',
             ease: 'power3.inOut',
             stagger: 0.06,
-        }, '<+=0.2').to('.info', 1.3, {
+        }, '<-=0.2').to('.info', 1.3, {
             y: '0',
             ease: 'power3.inOut',
             stagger: 0.1,

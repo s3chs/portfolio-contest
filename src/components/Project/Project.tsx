@@ -20,6 +20,7 @@ const Project = ({name, brand, pictures, description, year}: ProjectProps) => {
                         src={pictures[0]}
                         alt="project preview image"
                     />
+                    <span className="project-picture-text">hover me</span>
                 </div>
             </div>
         </>

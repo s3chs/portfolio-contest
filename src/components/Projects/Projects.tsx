@@ -15,6 +15,7 @@ const Projects = () => {
         const handleCallEvent = (e: any) => {
             const targetId = e.detail.target.id;
             const way = e.detail.way;
+            console.log(way, e.detail.from, targetId);
 
             if (way === 'leave' && targetId === 'Billabong' && e.detail.from === 'start') {
                 body!.style.backgroundColor = '#E8FCCF';
@@ -25,27 +26,51 @@ const Projects = () => {
                 line.style.backgroundColor = '#8884FF';
             }
 
-            if (way === 'enter')
-                switch (targetId) {
-                    case 'Billabong':
-                        body!.style.backgroundColor = '#FFE787';
-                        name.style.color = '#94778B';
-                        portfolioInfo.style.color = '#94778B';
-                        job.style.color = '#94778B';
-                        minutes.style.color = '#94778B';
-                        line.style.backgroundColor = '#94778B';
-                        break;
-                    case 'Deus':
-                        body!.style.backgroundColor = '#CEB3AB';
-                        name.style.color = '#B5F8FE';
-                        portfolioInfo.style.color = '#B5F8FE';
-                        job.style.color = '#B5F8FE';
-                        minutes.style.color = '#B5F8FE';
-                        line.style.backgroundColor = '#B5F8FE';
-                        break;
-                    default:
-                        console.log('Gérer le cas par défaut');
-                }
+            if (way === 'enter' && targetId === 'Billabong' && e.detail.from === 'start') {
+                body!.style.backgroundColor = '#FFE787';
+                name.style.color = '#94778B';
+                portfolioInfo.style.color = '#94778B';
+                job.style.color = '#94778B';
+                minutes.style.color = '#94778B';
+                line.style.backgroundColor = '#94778B';
+            }
+
+            if (way === 'leave' && targetId === 'Billabong' && e.detail.from === 'end') {
+                body!.style.backgroundColor = '#CEB3AB';
+                name.style.color = '#B5F8FE';
+                portfolioInfo.style.color = '#B5F8FE';
+                job.style.color = '#B5F8FE';
+                minutes.style.color = '#B5F8FE';
+                line.style.backgroundColor = '#B5F8FE';
+            }
+
+            if (way === 'enter' && targetId === 'Billabong' && e.detail.from === 'end') {
+                body!.style.backgroundColor = '#FFE787';
+                name.style.color = '#94778B';
+                portfolioInfo.style.color = '#94778B';
+                job.style.color = '#94778B';
+                minutes.style.color = '#94778B';
+                line.style.backgroundColor = '#94778B';
+            }
+
+            if (way === 'leave' && targetId === 'Deus' && e.detail.from === 'start') {
+                body!.style.backgroundColor = '#FFE787';
+                name.style.color = '#94778B';
+                portfolioInfo.style.color = '#94778B';
+                job.style.color = '#94778B';
+                minutes.style.color = '#94778B';
+                line.style.backgroundColor = '#94778B';
+            }
+
+            if (way === 'enter' && targetId === 'Deus' && e.detail.from === 'start') {
+                body!.style.backgroundColor = '#CEB3AB';
+                name.style.color = '#B5F8FE';
+                portfolioInfo.style.color = '#B5F8FE';
+                job.style.color = '#B5F8FE';
+                minutes.style.color = '#B5F8FE';
+                line.style.backgroundColor = '#B5F8FE';
+            }
+
         };
 
         window.addEventListener('call', handleCallEvent);
