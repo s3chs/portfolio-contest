@@ -15,7 +15,6 @@ const Projects = () => {
         const handleCallEvent = (e: any) => {
             const targetId = e.detail.target.id;
             const way = e.detail.way;
-            console.log(way, e.detail.from, targetId);
 
             if (way === 'leave' && targetId === 'Billabong' && e.detail.from === 'start') {
                 body!.style.backgroundColor = '#E8FCCF';
@@ -71,6 +70,60 @@ const Projects = () => {
                 line.style.backgroundColor = '#B5F8FE';
             }
 
+            if (way === 'leave' && targetId === 'Deus' && e.detail.from === 'end') {
+                body!.style.backgroundColor = '#ADA8B6';
+                name.style.color = '#B3EFB2';
+                portfolioInfo.style.color = '#B3EFB2';
+                job.style.color = '#B3EFB2';
+                minutes.style.color = '#B3EFB2';
+                line.style.backgroundColor = '#B3EFB2';
+            }
+
+            if (way === 'enter' && targetId === 'Deus' && e.detail.from === 'end') {
+                body!.style.backgroundColor = '#CEB3AB';
+                name.style.color = '#B5F8FE';
+                portfolioInfo.style.color = '#B5F8FE';
+                job.style.color = '#B5F8FE';
+                minutes.style.color = '#B5F8FE';
+                line.style.backgroundColor = '#B5F8FE';
+            }
+
+            if (way === 'leave' && targetId === 'Noah' && e.detail.from === 'start') {
+                body!.style.backgroundColor = '#ADA8B6';
+                name.style.color = '#B3EFB2';
+                portfolioInfo.style.color = '#B3EFB2';
+                job.style.color = '#B3EFB2';
+                minutes.style.color = '#B3EFB2';
+                line.style.backgroundColor = '#B3EFB2';
+            }
+
+            if (way === 'enter' && targetId === 'Noah' && e.detail.from === 'start') {
+                body!.style.backgroundColor = '#8C705F';
+                name.style.color = '#F1F0CC';
+                portfolioInfo.style.color = '#F1F0CC';
+                job.style.color = '#F1F0CC';
+                minutes.style.color = '#F1F0CC';
+                line.style.backgroundColor = '#F1F0CC';
+            }
+
+            if (way === 'leave' && targetId === 'Noah' && e.detail.from === 'end') {
+                body!.style.backgroundColor = '#CEB3AB';
+                name.style.color = '#B5F8FE';
+                portfolioInfo.style.color = '#B5F8FE';
+                job.style.color = '#B5F8FE';
+                minutes.style.color = '#B5F8FE';
+                line.style.backgroundColor = '#B5F8FE';
+            }
+
+            if (way === 'enter' && targetId === 'Noah' && e.detail.from === 'end') {
+                body!.style.backgroundColor = '#8C705F';
+                name.style.color = '#F1F0CC';
+                portfolioInfo.style.color = '#F1F0CC';
+                job.style.color = '#F1F0CC';
+                minutes.style.color = '#F1F0CC';
+                line.style.backgroundColor = '#F1F0CC';
+            }
+
         };
 
         window.addEventListener('call', handleCallEvent);
@@ -83,18 +136,32 @@ const Projects = () => {
     return (
         <div className="projects-container" data-scroll-section>
             <Project
-                name={'Tangerine Summer'}
+                name={'Tangerine Dream'}
                 brand="Billabong"
                 pictures={['https://res.cloudinary.com/dncemocxu/image/upload/v1698251399/wrangler-one_wepgvo.jpg']}
-                description="Summer Collection"
-                year="2022"
+                collection="Summer 23'"
+                projectClass="billabong"
             />
             <Project
-                name={'Yeah'}
+                name={'Future Jazz'}
                 brand="Deus"
                 pictures={['https://res.cloudinary.com/dncemocxu/image/upload/v1698251400/deus_yq5h3q.png']}
-                description="Winter Collection"
-                year="2023"
+                collection="Fall 19'"
+                projectClass="deus"
+            />
+            <Project
+                name={'On & On'}
+                brand="Daily Paper"
+                pictures={['https://res.cloudinary.com/dncemocxu/image/upload/v1698333863/LACOSTE-FW21-01_dj0zse.jpg']}
+                collection="Spring 21'"
+                projectClass="daily-paper"
+            />
+            <Project
+                name={'Cosy Cuffs'}
+                brand="Noah"
+                pictures={['https://res.cloudinary.com/dncemocxu/image/upload/v1698327674/Capture_d_e%CC%81cran_2023-10-26_a%CC%80_15.30.05_mid2ha.png']}
+                collection="Winter 17'"
+                projectClass="noah"
             />
         </div>
     );

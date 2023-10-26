@@ -1,7 +1,7 @@
 const About = () => {
     return (
         <div className="about-container" data-scroll-section>
-            <div className="about-text-container" data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal">
+            <div className="about-text-container">
                 <div>
                     <span className="greetings info">Hello !</span>
                 </div>
