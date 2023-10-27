@@ -48,10 +48,10 @@ const InformationOverlay = () => {
             <div className="down-infos">
                 <div className="portfolio-information-container">
                 <span>
-                    Portfolio 2023
+                    Mail
                 </span>
                     <span className="overlay-info">
-                    created by sechs
+                    Instagram
                 </span>
                 </div>
                 <div className="overlay-line"></div>

@@ -1,0 +1,34 @@
+.skills-container {
+  height: 100%;
+  width: 100vw;
+  padding: 150px 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+
+  .skill-container {
+    font-family: "PP Supply Sans", sans-serif;
+    font-size: 2em;
+    display: flex;
+    padding: 0 15px;
+    overflow: hidden;
+
+    span {
+      display: block;
+      transform: translateY(120px);
+      transition: 0.7s transform cubic-bezier(0.77, 0, 0.175, 1);
+      margin-bottom: 5px;
+      color: #F7ECCA;
+    }
+
+    .active {
+      span {
+        transform: translateY(0px);
+      }
+    }
+  }
+
+}

@@ -1,6 +1,6 @@
 .title-container {
   height: 100%;
-  width: 80vw;
+  width: 100vw;
 
   display: flex;
   align-items: center;
@@ -8,7 +8,7 @@
 
   .letter-container {
     font-family: "PP Supply Sans", sans-serif;
-    font-size: 6em;
+    font-size: 7em;
     overflow-x: hidden;
     text-transform: uppercase;
 
@@ -17,12 +17,28 @@
       transform: translateX(100px);
       transition: 0.7s transform cubic-bezier(0.77, 0, 0.175, 1);
       margin-bottom: 5px;
+      letter-spacing: 3px;
       color: #8884FF;
     }
+  }
 
-    &.active {
-      span {
-        transform: translateX(0px);
+  &.projects {
+    .letter-container {
+      &.active {
+        span {
+          transform: translateX(0px);
+        }
+      }
+    }
+  }
+
+  &.skills {
+    .letter-container {
+      &.active {
+        span {
+          transform: translateX(0px);
+          color: #B0FF92;
+        }
       }
     }
   }
