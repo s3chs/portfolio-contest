@@ -54,11 +54,6 @@ const Projects = ({locoInstance}: any) => {
                 job.style.color = '#94778B';
                 minutes.style.color = '#94778B';
                 line.style.backgroundColor = '#94778B';
-
-                billabongBrandName!.classList.add('active');
-                billabongName!.classList.add('active');
-                billabongCollection!.classList.add('active');
-                billabongLink!.classList.add('active');
             }
 
             if (way === 'leave' && targetId === 'Billabong' && e.detail.from === 'end') {
@@ -95,11 +90,6 @@ const Projects = ({locoInstance}: any) => {
                 job.style.color = '#B5F8FE';
                 minutes.style.color = '#B5F8FE';
                 line.style.backgroundColor = '#B5F8FE';
-
-                deusBrandName!.classList.add('active');
-                deusName!.classList.add('active');
-                deusCollection!.classList.add('active');
-                deusLink!.classList.add('active');
             }
 
             if (way === 'leave' && targetId === 'Deus' && e.detail.from === 'end') {
@@ -136,11 +126,6 @@ const Projects = ({locoInstance}: any) => {
                 job.style.color = '#B3EFB2';
                 minutes.style.color = '#B3EFB2';
                 line.style.backgroundColor = '#B3EFB2';
-
-                dailyPaperBrandName!.classList.add('active');
-                dailyPaperName!.classList.add('active');
-                dailyPaperCollection!.classList.add('active');
-                dailyPaperLink!.classList.add('active');
             }
 
             if (way === 'leave' && targetId === 'Daily-Paper' && e.detail.from === 'end') {
@@ -177,11 +162,6 @@ const Projects = ({locoInstance}: any) => {
                 job.style.color = '#F1F0CC';
                 minutes.style.color = '#F1F0CC';
                 line.style.backgroundColor = '#F1F0CC';
-
-                noahBrandName!.classList.add('active');
-                noahName!.classList.add('active');
-                noahCollection!.classList.add('active');
-                noahLink!.classList.add('active');
             }
 
             if (way === 'leave' && targetId === 'Noah' && e.detail.from === 'end') {
