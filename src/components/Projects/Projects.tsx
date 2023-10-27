@@ -1,7 +1,7 @@
 import Project from '../Project/Project';
 import { useEffect } from 'react';
 
-const Projects = () => {
+const Projects = ({locoInstance}: any) => {
 
     useEffect(() => {
         // Selectors
@@ -13,22 +13,26 @@ const Projects = () => {
         const job: any = document.querySelector('.overlay-job');
         const minutes: any = document.querySelector('.overlay-minutes');
         const line: any = document.querySelector('.overlay-line');
-        // Billabong selectors
+        // Billabong text selectors
         const billabongBrandName = document.querySelector('.brand-container.billabong > span');
         const billabongName = document.querySelector('.name-container.billabong > span');
         const billabongCollection = document.querySelector('.collection-container.billabong > span');
-        // Deus selectors
+        const billabongLink = document.querySelector('.link-container.billabong > a');
+        // Deus text selectors
         const deusBrandName = document.querySelector('.brand-container.deus > span');
         const deusName = document.querySelector('.name-container.deus > span');
         const deusCollection = document.querySelector('.collection-container.deus > span');
-        // Daily Paper selectors
+        const deusLink = document.querySelector('.link-container.deus > a');
+        // Daily Paper text  selectors
         const dailyPaperBrandName = document.querySelector('.brand-container.daily-paper > span');
         const dailyPaperName = document.querySelector('.name-container.daily-paper > span');
         const dailyPaperCollection = document.querySelector('.collection-container.daily-paper > span');
-        // Noah selectors
+        const dailyPaperLink = document.querySelector('.link-container.daily-paper > a');
+        // Noah text selectors
         const noahBrandName = document.querySelector('.brand-container.noah > span');
         const noahName = document.querySelector('.name-container.noah > span');
         const noahCollection = document.querySelector('.collection-container.noah > span');
+        const noahLink = document.querySelector('.link-container.noah > a');
 
         const handleCallEvent = (e: any) => {
             const targetId = e.detail.target.id;
@@ -54,6 +58,7 @@ const Projects = () => {
                 billabongBrandName!.classList.add('active');
                 billabongName!.classList.add('active');
                 billabongCollection!.classList.add('active');
+                billabongLink!.classList.add('active');
             }
 
             if (way === 'leave' && targetId === 'Billabong' && e.detail.from === 'end') {
@@ -94,6 +99,7 @@ const Projects = () => {
                 deusBrandName!.classList.add('active');
                 deusName!.classList.add('active');
                 deusCollection!.classList.add('active');
+                deusLink!.classList.add('active');
             }
 
             if (way === 'leave' && targetId === 'Deus' && e.detail.from === 'end') {
@@ -134,6 +140,7 @@ const Projects = () => {
                 dailyPaperBrandName!.classList.add('active');
                 dailyPaperName!.classList.add('active');
                 dailyPaperCollection!.classList.add('active');
+                dailyPaperLink!.classList.add('active');
             }
 
             if (way === 'leave' && targetId === 'Daily-Paper' && e.detail.from === 'end') {
@@ -174,6 +181,7 @@ const Projects = () => {
                 noahBrandName!.classList.add('active');
                 noahName!.classList.add('active');
                 noahCollection!.classList.add('active');
+                noahLink!.classList.add('active');
             }
 
             if (way === 'leave' && targetId === 'Noah' && e.detail.from === 'end') {
@@ -196,7 +204,6 @@ const Projects = () => {
         };
 
         window.addEventListener('call', handleCallEvent);
-
         return () => {
             window.removeEventListener('call', handleCallEvent);
         };
@@ -210,6 +217,7 @@ const Projects = () => {
                 pictures={['https://res.cloudinary.com/dncemocxu/image/upload/v1698251399/wrangler-one_wepgvo.jpg']}
                 collection="Summer 23'"
                 projectClass="billabong"
+                link="https://billabong.fr/homme/blog/collaborations/billabong-wrangler-drop1-launch.html"
             />
             <Project
                 name={'Future Jazz'}
@@ -217,6 +225,7 @@ const Projects = () => {
                 pictures={['https://res.cloudinary.com/dncemocxu/image/upload/v1698251400/deus_yq5h3q.png']}
                 collection="Fall 19'"
                 projectClass="deus"
+                link="https://eu.deuscustoms.com/"
             />
             <Project
                 name={'On & On'}
@@ -224,6 +233,7 @@ const Projects = () => {
                 pictures={['https://res.cloudinary.com/dncemocxu/image/upload/v1698333863/LACOSTE-FW21-01_dj0zse.jpg']}
                 collection="Spring 21'"
                 projectClass="daily-paper"
+                link="https://www.designscene.net/2021/05/lacoste-fw21.html"
             />
             <Project
                 name={'Cosy NY'}
@@ -231,6 +241,7 @@ const Projects = () => {
                 pictures={['https://res.cloudinary.com/dncemocxu/image/upload/v1698327674/Capture_d_e%CC%81cran_2023-10-26_a%CC%80_15.30.05_mid2ha.png']}
                 collection="Winter 17'"
                 projectClass="noah"
+                link="https://noahny.com/blogs/lookbooks/fall-winter-2022-lookbook"
             />
         </div>
     );
