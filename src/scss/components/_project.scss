@@ -71,7 +71,7 @@
       color: #FFCAE9;
 
       @media screen and (max-width: $layout-breakpoint-xsmall) {
-        font-size: 3.5em;
+        font-size: 2.7em;
         grid-area: 7 / 1 / 9 / 13;
       }
 
@@ -105,6 +105,15 @@
       grid-area: 3 / 3 / 5 / 12;
       color: #2F3061;
 
+      @media screen and (max-width: $layout-breakpoint-tablet) {
+        grid-area: 3 / 1 / 5 / 13;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        grid-area: 2 / 1 / 6 / 13;
+
+      }
+
       &.active {
         span {
           transform: translateY(0px);
@@ -120,6 +129,10 @@
         span {
           transform: translateY(0px);
         }
+      }
+
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        grid-area: 8 / 1 / 10 / 12;
       }
     }
   }
@@ -157,6 +170,10 @@
         grid-area: 2 / 6 / 5 / 13;
       }
 
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        font-size: 2em;
+      }
+
       &.active {
         span {
           transform: translateY(0px);
@@ -187,6 +204,15 @@
       grid-area: 7 / 9 / 10 / 12;
       color: #2F3061;
 
+      @media screen and (max-width: $layout-breakpoint-tablet) {
+        grid-area: 7 / 9 / 10 / 13;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        grid-area: 5 / 2 / 10 / 13;
+      }
+
+
       &.active {
         span {
           transform: translateY(0px);
@@ -195,8 +221,13 @@
     }
 
     &.noah {
-      grid-area: 3 / 9 / 6 / 12;
+      grid-area: 3 / 9 / 6 / 13;
       color: #220C10;
+
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        text-align: center;
+        grid-area: 2 / 8 / 6 / 13;
+      }
 
       &.active {
         span {
@@ -235,7 +266,7 @@
 
       @media screen and (max-width: $layout-breakpoint-tablet) {
         grid-area: 10 / 6 / 12 / 13;
-
+        font-size: 2.3em;
       }
 
       &.active {
@@ -268,6 +299,10 @@
       grid-area: 9 / 2 / 10 / 8;
       color: #2F3061;
 
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        grid-area: 11 / 1 / 11 / 13;
+      }
+
       &.active {
         span {
           transform: translateY(0px);
@@ -276,8 +311,14 @@
     }
 
     &.noah {
-      grid-area: 11 / 8 / 12 / 12;
+      grid-area: 11 / 8 / 13 / 12;
       color: #220C10;
+
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        grid-area: 11 / 4 / 13 / 12;
+        text-align: center;
+
+      }
 
       &.active {
         span {
