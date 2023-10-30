@@ -1,4 +1,5 @@
-import { ReactNode } from 'react';
+import { ReactNode, useLayoutEffect } from 'react';
+import LocomotiveScroll from 'locomotive-scroll';
 
 export const Layout = ({children}: {children: ReactNode}) => {
 

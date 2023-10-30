@@ -10,10 +10,11 @@ interface ProjectProps {
 const Project = ({name, brand, pictures, collection, projectClass, link}: ProjectProps) => {
         return (
             <div className={'project-container ' + projectClass} id={brand} data-scroll data-scroll-call="call"
-                 data-scroll-offset="40%, 40%" data-scroll-repeat
+                 data-scroll-offset="15%, 15%" data-scroll-repeat
             >
                 <div className={'project-picture-container'} data-scroll data-scroll-class="active"
-                     data-scroll-offset="40%, 40%" data-scroll-repeat>
+                     data-scroll-offset="15%, 15%" data-scroll-repeat
+                >
                     <img
                         className={' project-picture'}
                         src={pictures[0]}
