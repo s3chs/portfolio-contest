@@ -30,7 +30,7 @@ const Project = ({name, brand, pictures, collection, projectClass, link}: Projec
                     <span>{collection}</span>
                 </div>
                 <div className={'link-container ' + projectClass} data-scroll data-scroll-class="active" data-scroll-offset="20%">
-                    <a href={link} target="_blank">lien vers la collection</a>
+                    <a href={link} target="_blank">link to collection</a>
                 </div>
             </div>
         );
@@ -38,4 +38,3 @@ const Project = ({name, brand, pictures, collection, projectClass, link}: Projec
 ;
 
 export default Project;
-;

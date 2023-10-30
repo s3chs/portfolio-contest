@@ -1,4 +1,5 @@
 const Skills = () => {
+
     const skills = [
         'Fashion Knowledge',
         'Color Theory',
@@ -19,19 +20,14 @@ const Skills = () => {
 
     return (
         <div className="skills-container">
-            {skills.map((skill, i) => (
+            {skills.map((skill, i) =>
                 <div className="skill-container" key={i}>
-                    {skill.split('').join(' ').split(' ').map((word, j) => (
-                        <div className="word-container" key={j}>
-                            {word.split('').map((letter, k) => (
-                                <div className="letter-container" key={k} data-scroll data-scroll-class="active">
-                                    <span>{letter}</span>
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </div>
-            ))}
+                    {skill.split('').map((letter, j) =>
+                        <div className="letter-container " key={j} data-scroll data-scroll-class="active">
+                            <span>{letter === ' ' ? <span>&nbsp;</span> : letter}</span>
+                        </div>)}
+                </div>,
+            )}
         </div>
     );
 };

@@ -1,20 +1,13 @@
-.skills-container {
+.contact-container {
   height: 100%;
   width: 100vw;
-  padding: 150px 20px;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  overflow: hidden;
-  z-index: 35;
+  justify-content: center;
 
-  .skill-container {
-    font-family: "PP Supply Sans", sans-serif;
-    font-size: 2em;
-    display: flex;
-    padding: 0 15px;
+  .link-container {
     overflow: hidden;
 
     &:nth-child(even) {
@@ -25,22 +18,20 @@
       color: #F7ECCA;
     }
 
-    .letter-container {
-      display: flex;
-    }
-
     span {
       display: block;
+      font-family: "PP Supply Sans", sans-serif;
+      font-size: 4em;
+      padding: 10px;
       transform: translateY(120px);
       transition: 0.7s transform cubic-bezier(0.77, 0, 0.175, 1);
-      padding-bottom: 5px;
+
     }
 
-    .active {
+    &.active {
       span {
         transform: translateY(0px);
       }
     }
   }
-
 }

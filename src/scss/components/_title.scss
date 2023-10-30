@@ -42,5 +42,16 @@
       }
     }
   }
+
+  &.contact {
+    .letter-container {
+      &.active {
+        span {
+          transform: translateX(0px);
+          color: #B0FF92;
+        }
+      }
+    }
+  }
 }
 

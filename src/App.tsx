@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Title from './components/Title/Title';
 import Skills from './components/Skills/Skills';
+import Contact from './components/contact/Contact';
 
 function App() {
     const locomotiveScroll = new LocomotiveScroll({
@@ -32,6 +33,8 @@ function App() {
             <Projects/>
             <Title title="skills"/>
             <Skills/>
+            <Title title="contact"/>
+            <Contact/>
         </Layout>
     );
 }
