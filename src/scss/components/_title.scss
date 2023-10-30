@@ -20,6 +20,18 @@
       letter-spacing: 3px;
       color: #8884FF;
     }
+
+    @media screen and (max-width: $layout-breakpoint-small) {
+      font-size: 6em;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet) {
+      font-size: 4.5em;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-xsmall) {
+      font-size: 3.5em;
+    }
   }
 
   &.projects {

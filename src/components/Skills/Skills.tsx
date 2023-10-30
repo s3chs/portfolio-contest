@@ -19,7 +19,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className="skills-container">
+        <div className="skills-container" data-scroll-section>
             {skills.map((skill, i) =>
                 <div className="skill-container" key={i}>
                     {skill.split('').map((letter, j) =>

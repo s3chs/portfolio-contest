@@ -7,12 +7,12 @@ const About = () => {
                 </div>
                 <div>
                         <span className="info-text info">
-                    My name is <span className="name">Margot Creneguy</span>.
+                    My name is <span className="name">Margot Creneguy.</span>
                     </span>
                 </div>
                 <div>
                         <span className="info-text info">
-                    I am a 33 years old <span className="job">fashion stylist</span>.
+                    I am a 33 years old <span className="job">fashion stylist.</span>
                     </span>
                 </div>
                 <div>

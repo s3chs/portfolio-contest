@@ -5,6 +5,14 @@
   padding: 40px;
   z-index: 10;
 
+  @media screen and (max-width: $layout-breakpoint-tablet) {
+    padding: 25px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-xsmall) {
+    padding: 20px;
+  }
+
   .upper-infos {
     width: 100%;
     height: 50%;
@@ -24,12 +32,37 @@
         font-weight: 500;
         transform: translateY(300%);
 
+        @media screen and (max-width: $layout-breakpoint-small) {
+          font-size: 3em;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet) {
+          font-size: 2.2em;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          font-size: 1.8em;
+        }
+
         &:last-child {
           padding-left: 50px;
           font-style: italic;
           font-size: 4em;
           font-family: "PP Supply Sans", sans-serif;
           color: #8884FF;
+
+          @media screen and (max-width: $layout-breakpoint-small) {
+            font-size: 3.4em;
+          }
+
+          @media screen and (max-width: $layout-breakpoint-tablet) {
+            font-size: 2.6em;
+          }
+
+          @media screen and (max-width: $layout-breakpoint-xsmall) {
+            font-size: 2.2em;
+            padding-left: 0px;
+          }
         }
       }
     }
@@ -44,6 +77,18 @@
         font-family: "Neue Montreal", sans-serif;
         font-size: 2.5em;
         transform: translateY(100%);
+
+        @media screen and (max-width: $layout-breakpoint-small) {
+          font-size: 2.2em;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet) {
+          font-size: 2em;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          font-size: 1.8em;
+        }
       }
     }
   }
@@ -73,6 +118,10 @@
           color: #8884FF;
           padding-bottom: 3px;
         }
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          font-size: 1em;
+        }
       }
     }
 
@@ -81,6 +130,10 @@
       flex: 0;
       margin: 0 50px;
       background-color: #393D41;
+
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        display: none;
+      }
     }
 
     .job-container {
@@ -101,6 +154,18 @@
           font-style: normal;
           color: #8884FF;
           font-family: "PP Supply Sans", sans-serif;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-small) {
+          font-size: 3em;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet) {
+          font-size: 2.2em;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          font-size: 1.8em;
         }
       }
     }
