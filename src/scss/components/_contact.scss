@@ -27,6 +27,13 @@
       transform: translateY(120px);
       transition: 0.7s transform cubic-bezier(0.77, 0, 0.175, 1);
 
+      @media screen and (max-width: $layout-breakpoint-tablet) {
+        font-size: 3em;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        font-size: 2em;
+      }
     }
 
     &.active {

@@ -14,7 +14,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 80vh;
-    width: 30vw;
+    width: 35vw;
     overflow: hidden;
     transition: 0.7s clip-path cubic-bezier(0.77, 0, 0.175, 1);
     clip-path: inset(10%);
@@ -39,7 +39,8 @@
     }
 
     @media screen and (max-width: $layout-breakpoint-xsmall) {
-      width: 85vw;
+      height: 75vh;
+      width: 80vw;
     }
   }
 
@@ -315,9 +316,8 @@
       color: #220C10;
 
       @media screen and (max-width: $layout-breakpoint-xsmall) {
-        grid-area: 11 / 4 / 13 / 12;
+        grid-area: 11 / 5 / 13 / 13;
         text-align: center;
-
       }
 
       &.active {
@@ -333,6 +333,10 @@
     grid-area: 1 / 3 / 1 / 11;
     text-align: center;
     overflow-y: hidden;
+
+    @media screen and (max-width: $layout-breakpoint-xsmall) {
+      grid-area: 1 / 3 / 1 / 11;
+    }
 
 
     a {

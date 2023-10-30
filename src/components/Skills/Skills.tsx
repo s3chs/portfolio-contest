@@ -12,9 +12,9 @@ const Skills = () => {
         'Organization',
         'Styling Techniques',
         'Adaptability',
-        'Fashion Photography Awareness',
-        'Knowledge of Fabrics and Materials',
-        'Budgeting and Shopping Skills',
+        'Fashion Photography',
+        'Fabrics and Materials',
+        'Budgeting Skills',
         'Client Management',
     ];
 

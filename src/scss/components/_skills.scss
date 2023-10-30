@@ -15,7 +15,8 @@
     font-family: "PP Supply Sans", sans-serif;
     font-size: 2em;
     display: flex;
-    padding: 0 15px;
+    flex-shrink: 1;
+    margin: 0 30px;
     overflow: hidden;
 
     &:nth-child(even) {
@@ -42,6 +43,15 @@
         transform: translateY(0px);
       }
     }
-  }
 
+    @media screen and (max-width: $layout-breakpoint-tablet) {
+      font-size: 1.5em;
+      margin: 0 20px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-xsmall) {
+      font-size: 1.2em;
+      margin: 0 5px;
+    }
+  }
 }
