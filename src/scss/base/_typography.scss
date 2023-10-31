@@ -7,9 +7,35 @@
 }
 
 @font-face {
-  font-family: 'Philifont';
-  src: local('PP Neue Montreal italic'),
-  url('./customfont/PPNeueMontreal-Italic.ttf') format("truetype");
-  font-weight: normal;
-  font-style: italic;
+  font-family: 'Philifont Medium';
+  src: local('PP Neue Montreal medium'),
+  url('./customfont/PPNeueMontreal-Medium.ttf') format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Philifont Italic Bold';
+  src: local('PP Neue Montreal semi bold italic'),
+  url('./customfont/PPNeueMontreal-SemiBolditalic.otf') format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Philifont Bold';
+  src: local('PP Neue Montreal bold'),
+  url('./customfont/PPNeueMontreal-Bold.ttf') format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Philifont Dos';
+  src: local('PP Supply Sans'),
+  url('./customfont/PPSupplySans-Regular.ttf') format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Philifont Dos Medium';
+  src: local('PP Supply Sans'),
+  url('./customfont/PPSupplySans-Medium.ttf') format("truetype");
 }

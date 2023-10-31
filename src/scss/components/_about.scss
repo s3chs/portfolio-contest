@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Philifont, sans-serif;
 
   .about-text-container {
     width: 60%;
@@ -27,7 +28,7 @@
 
       .greetings {
         display: block;
-        font-size: 8.5em;
+        font-size: 9.5em;
         font-style: italic;
         font-weight: 600;
         padding: 0 20px;
@@ -40,8 +41,7 @@
 
         @media screen and (max-width: $layout-breakpoint-xsmall) {
           font-size: 4em;
-          padding: 0 10px;
-          padding-top: 5px;
+          padding: 5px 10px 0 10px;
         }
       }
     }
@@ -54,14 +54,14 @@
 
       .info-text {
         display: block;
-        font-family: "Neue Montreal", sans-serif;
-        font-size: 1.8em;
+        font-family: "Philifont", sans-serif;
+        font-size: 1.6em;
         text-align: center;
         line-height: 40px;
         transform: translateY(120%);
 
         .name, .job, .brand {
-          font-weight: 600;
+          font-family: "Philifont Bold", sans-serif;
           font-size: 1em;
           color: #8884FF;
         }

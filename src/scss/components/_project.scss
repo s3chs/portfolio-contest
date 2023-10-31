@@ -45,9 +45,8 @@
   }
 
   .brand-container {
-    font-family: "PP Supply Sans", sans-serif;
+    font-family: "Philifont Dos Medium", sans-serif;
     font-size: 7em;
-    font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
     z-index: 15;
@@ -139,9 +138,8 @@
   }
 
   .name-container {
-    font-family: "Neue Montreal", sans-serif;
+    font-family: "Philifont Medium", sans-serif;
     font-size: 4.5em;
-    font-weight: 500;
     z-index: 15;
     overflow: hidden;
 
@@ -239,9 +237,8 @@
   }
 
   .collection-container {
-    font-family: "PP Supply Sans", sans-serif;
+    font-family: "Philifont Dos", sans-serif;
     font-size: 3.5em;
-    font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
     z-index: 15;
@@ -343,7 +340,7 @@
       display: block;
       text-decoration: none;
       font-size: 1em;
-      font-family: "Neue Montreal", sans-serif;
+      font-family: "Philifont", sans-serif;
 
       transition: 1s transform cubic-bezier(0.77, 0, 0.175, 1);
       transform: translateY(200px);
