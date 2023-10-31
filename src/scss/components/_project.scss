@@ -67,12 +67,17 @@
     }
 
     &.billabong {
-      grid-area: 6 / 2 / 8 / 12;
+      grid-area: 6 / 2 / 9 / 12;
       color: #FFCAE9;
+
+      @media screen and (max-width: $layout-breakpoint-tablet) {
+        font-size: 4em;
+        grid-area: 7 / 1 / 12 / 13;
+      }
 
       @media screen and (max-width: $layout-breakpoint-xsmall) {
         font-size: 2.7em;
-        grid-area: 7 / 1 / 9 / 13;
+        grid-area: 7 / 1 / 12 / 13;
       }
 
       &.active {
@@ -102,14 +107,16 @@
     }
 
     &.daily-paper {
-      grid-area: 3 / 3 / 5 / 12;
+      grid-area: 2 / 3 / 4 / 12;
       color: #2F3061;
 
       @media screen and (max-width: $layout-breakpoint-tablet) {
+        font-size: 4em;
         grid-area: 3 / 1 / 5 / 13;
       }
 
       @media screen and (max-width: $layout-breakpoint-xsmall) {
+        font-size: 2.7em;
         grid-area: 2 / 1 / 6 / 13;
 
       }
@@ -122,7 +129,7 @@
     }
 
     &.noah {
-      grid-area: 6 / 4 / 8 / 12;
+      grid-area: 6 / 4 / 9 / 12;
       color: #220C10;
 
       &.active {
@@ -131,8 +138,14 @@
         }
       }
 
+      @media screen and (max-width: $layout-breakpoint-tablet) {
+        grid-area: 6 / 2 / 9 / 12;
+        font-size: 5em;
+      }
+
       @media screen and (max-width: $layout-breakpoint-xsmall) {
         grid-area: 8 / 1 / 10 / 12;
+        font-size: 3em;
       }
     }
   }
@@ -294,7 +307,7 @@
     }
 
     &.daily-paper {
-      grid-area: 9 / 2 / 10 / 8;
+      grid-area: 9 / 2 / 11 / 8;
       color: #2F3061;
 
       @media screen and (max-width: $layout-breakpoint-xsmall) {
@@ -309,7 +322,7 @@
     }
 
     &.noah {
-      grid-area: 11 / 8 / 13 / 12;
+      grid-area: 10 / 9 / 13 / 13;
       color: #220C10;
 
       @media screen and (max-width: $layout-breakpoint-xsmall) {
