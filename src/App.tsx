@@ -6,7 +6,6 @@ import Projects from './components/Projects/Projects';
 import Title from './components/Title/Title';
 import Skills from './components/Skills/Skills';
 import Contact from './components/contact/Contact';
-import { useLayoutEffect } from 'react';
 
 function App() {
     const locomotiveScroll = new LocomotiveScroll({
