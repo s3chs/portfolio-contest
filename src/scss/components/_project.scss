@@ -322,8 +322,12 @@
     }
 
     &.noah {
-      grid-area: 10 / 9 / 13 / 13;
+      grid-area: 11 / 8 / 13 / 13;
       color: #220C10;
+
+      @media screen and (max-width: $layout-breakpoint-small) {
+        grid-area: 10 / 9 / 13 / 13;
+      }
 
       @media screen and (max-width: $layout-breakpoint-xsmall) {
         grid-area: 11 / 5 / 13 / 13;
@@ -350,18 +354,39 @@
 
 
     a {
-      display: block;
+      position: relative;
+      display: inline-block;
       text-decoration: none;
       font-size: 1em;
       font-family: "Philifont", sans-serif;
 
       transition: 1s transform cubic-bezier(0.77, 0, 0.175, 1);
       transform: translateY(200px);
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 1px;
+        width: 0;
+        transition: 0.5s width cubic-bezier(0.77, 0, 0.175, 1);
+      }
+
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
     }
 
     &.billabong {
       a {
         color: #FFCAE9;
+
+        &:after {
+          background-color: #FFCAE9;
+        }
       }
 
       &.active {
@@ -374,6 +399,10 @@
     &.deus {
       a {
         color: #723D46;
+
+        &:after {
+          background-color: #723D46;
+        }
       }
 
       &.active {
@@ -386,6 +415,10 @@
     &.daily-paper {
       a {
         color: #2F3061;
+
+        &:after {
+          background-color: #2F3061;
+        }
       }
 
       &.active {
@@ -398,6 +431,10 @@
     &.noah {
       a {
         color: #220C10;
+
+        &:after {
+          background-color: #220C10;
+        }
       }
 
       &.active {
