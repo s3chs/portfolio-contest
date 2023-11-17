@@ -38,8 +38,8 @@ const InformationOverlay = () => {
         <div className="information-overlay-container">
             <div className="upper-infos">
                 <div className="portfolio-name-container">
-                    <span>MARGOT</span>
-                    <span className="overlay-name">CRENEGUY.</span>
+                    <span>IRIS</span>
+                    <span className="overlay-name">LENERAY.</span>
                 </div>
                 <div className="time-container">
                     <Clock/>
